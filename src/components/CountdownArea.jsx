@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const CountdownArea = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(2020, 10, 5) - +new Date();
+    const difference = +new Date(2020, 9, 5) - +new Date();
     let timeLeft = {};
     // console.log("Year: " + year);
     console.log("Date:" + Date(2020, 10, 5));
