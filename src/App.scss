@@ -21,6 +21,9 @@ html {
   font-size: 10px;
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 body {
   margin: 0;
@@ -76,6 +79,7 @@ ul {
 #hero {
   height: 100vh;
   background: $black;
+  scroll-snap-align: start;
   &::before {
     content: "";
     z-index: -1;
@@ -166,6 +170,8 @@ header {
 #countdown-area {
   padding: 5rem 0;
   background: var(--accent);
+  height: 100vh;
+  scroll-snap-align: start;
   .container {
     display: flex;
     justify-content: space-evenly;
@@ -206,6 +212,11 @@ footer {
       width: 1.6rem;
       path {
         fill: var(--sfg);
+      }
+      &:hover {
+        path {
+          fill: var(--accent);
+        }
       }
     }
   }
