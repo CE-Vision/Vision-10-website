@@ -11,14 +11,25 @@ function App() {
     console.log("Diference: " + difference);
     if (difference > 0) {
       timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
-        minutes: Math.floor((difference / 1000 / 60) % 60),
+        days: addPrecedingZero(Math.floor(difference / (1000 * 60 * 60 * 24))),
+        hours: addPrecedingZero(
+          Math.floor((difference / (1000 * 60 * 60)) % 24)
+        ),
+        minutes: addPrecedingZero(Math.floor((difference / 1000 / 60) % 60)),
       };
     }
 
     return timeLeft;
   };
+  function addPrecedingZero(time) {
+    console.log(time);
+    let timeS = String(time);
+    if (timeS.length <= 1) {
+      timeS = "0" + timeS;
+    }
+    console.log(timeS);
+    return timeS;
+  }
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
   useEffect(() => {
     setTimeout(() => {
