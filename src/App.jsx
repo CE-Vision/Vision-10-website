@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Hero from "./components/Hero";
+import CountdownArea from "./components/CountdownArea";
 import "./App.scss";
 
 function App() {
@@ -44,37 +45,7 @@ function App() {
   return (
     <>
       <Hero />
-      <div id="countdown-area">
-        <div className="container">
-          <div id="date">
-            <h1 style={{ color: "var(--sbg)", fontSize: "3rem" }}>
-              MARK THE DATE
-            </h1>
-            <h1>5 OCT</h1>
-          </div>
-          <div id="countdown">
-            <h1 style={{ fontSize: "7.5rem" }}>
-              {timerComponents.length ? (
-                timerComponents
-              ) : (
-                <span>Time's up!</span>
-              )}
-            </h1>
-            <h1
-              style={{
-                color: "var(--sbg)",
-                fontSize: "3.5rem",
-              }}
-            >
-              <div className="flexcont">
-                <span>DAYS</span>
-                <span>HRS</span>
-                <span>MIN</span>
-              </div>
-            </h1>
-          </div>
-        </div>
-      </div>
+      <CountdownArea />
     </>
   );
 }

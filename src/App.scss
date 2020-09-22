@@ -175,7 +175,7 @@ header {
 #date,
 #countdown {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-content: center;
   flex-direction: column;
   text-align: center;
@@ -183,6 +183,9 @@ header {
   h1 {
     font-size: 8rem;
   }
+}
+#time {
+  font-size: 7.5rem;
 }
 #countdown {
   flex-direction: column;
@@ -196,7 +199,7 @@ header {
       font-size: 6rem;
     }
     #x {
-      transform: translateX(10rem);
+      transform: translateX(11rem);
       font-size: 12rem;
     }
   }
