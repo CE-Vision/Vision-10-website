@@ -24,11 +24,15 @@ function App() {
     }, 60000);
   });
   const timerComponents = [];
-  Object.keys(timeLeft).forEach((interval) => {
+  Object.keys(timeLeft).forEach((interval, index) => {
     if (!timeLeft[interval]) {
       return;
     }
-
+    console.log(index);
+    if (index === 2) {
+      timerComponents.push(<span>{timeLeft[interval]}</span>);
+      return;
+    }
     timerComponents.push(
       <span>
         {timeLeft[interval]} {": "}
