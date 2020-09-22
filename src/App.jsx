@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Hero from "./components/Hero";
 import "./App.scss";
 
 function App() {
@@ -41,29 +42,9 @@ function App() {
   });
 
   return (
-    <div id="hero">
-      <div className="background" />
-      <div className="container">
-        {/*  <header>
-          <span id="logo">5 OCT</span>
-          <ul>
-            <li>
-              <a>Events</a>
-            </li>
-            <li>
-              <a>Team</a>
-            </li>
-          </ul>
-        </header> */}
-        <div id="hero-content">
-          <div className="vision">
-            <h1>VISION</h1>
-            <span id="x">X</span>
-          </div>
-          <h1 id="soon">coming soon</h1>
-        </div>
-      </div>
-      <div id="comingsoon">
+    <>
+      <Hero />
+      <div id="countdown-area">
         <div className="container">
           <div id="date">
             <h1 style={{ color: "var(--sbg)", fontSize: "3rem" }}>
@@ -73,7 +54,6 @@ function App() {
           </div>
           <div id="countdown">
             <h1 style={{ fontSize: "7.5rem" }}>
-              {" "}
               {timerComponents.length ? (
                 timerComponents
               ) : (
@@ -87,7 +67,6 @@ function App() {
               }}
             >
               <div className="flexcont">
-                {" "}
                 <span>DAYS</span>
                 <span>HRS</span>
                 <span>MIN</span>
@@ -96,7 +75,7 @@ function App() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

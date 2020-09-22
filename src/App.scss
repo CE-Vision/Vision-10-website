@@ -16,7 +16,6 @@
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   box-sizing: border-box;
-  transition: display 0.3s ease-in-out;
 }
 html {
   font-size: 10px;
@@ -39,6 +38,9 @@ h1 {
   font-weight: 900;
   font-size: 4.5rem;
 }
+h3 {
+  font: 400 1.2rem $font1;
+}
 a {
   cursor: pointer;
 }
@@ -48,19 +50,19 @@ i {
 ul {
   list-style: none;
 }
-.flexcont {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 2rem;
-}
 .container {
   margin: 0 auto;
   width: 100%;
   height: 100%;
-  max-width: 480px;
+  max-width: 1280px;
   padding: 0 2rem;
   background: transparent;
+}
+.flexcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5px;
 }
 #logo {
   font: 900 1.8rem $font1;
@@ -69,14 +71,14 @@ ul {
   border: solid 2px var(--accent);
 }
 #hero {
+  height: 100vh;
   background: $black;
-  height: fit-content;
   &::before {
     content: "";
     z-index: -1;
     position: fixed;
     display: block;
-    opacity: 0.25;
+    opacity: 0.15;
     height: 100%;
     width: 100%;
     background-attachment: fixed;
@@ -84,37 +86,42 @@ ul {
     background-image: url(./assets/static-bg.gif);
   }
   #hero-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1.5rem;
-    img {
-      width: 30rem;
-      opacity: 0.75;
-    }
+    text-align: center;
+  }
+}
+#up-arrow {
+  position: absolute;
+  height: 3.5rem;
+  left: 50%;
+  bottom: 5.5rem;
+  animation: oscillate 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  path {
+    fill: var(--accent);
   }
 }
 .vision {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-55%, -50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  translate: -1rem;
-  padding: 5rem 0;
   h1 {
-    font-size: 6rem;
+    font-size: 10rem;
+
     padding: 2rem 0;
   }
   #x {
     position: absolute;
     z-index: 1;
-    translate: 11rem;
-    opacity: 0.75;
-    font: 900 12rem $font1;
+    transform: translateX(18rem);
+    font: 900 16rem $font1;
     color: var(--accent);
   }
 }
+
 header {
   position: sticky;
   display: flex;
@@ -148,18 +155,16 @@ header {
     }
   }
 }
-#soon {
-  position: absolute;
-  bottom: -1rem;
-  font-size: 4rem;
-  mix-blend-mode: screen;
+#coming-soon {
+  position: relative;
+  font-size: 8rem;
+  mix-blend-mode: overlay;
 }
-#comingsoon {
+#countdown-area {
   padding: 5rem 0;
   background: var(--accent);
   .container {
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
   }
@@ -177,33 +182,46 @@ header {
   }
 }
 #countdown {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 780px) {
   .container {
-    max-width: 100vw;
-  }
-  #hero {
-    height: 100vh;
+    max-width: 480px;
   }
   .vision {
     h1 {
-      font-size: 10rem;
+      font-size: 6rem;
     }
     #x {
-      font-size: 16rem;
-      translate: 17rem;
+      transform: translateX(10rem);
+      font-size: 12rem;
     }
   }
-  #soon {
-    transform: translateY(0);
+  #coming-soon {
+    font-size: 3rem;
+    bottom: -3rem;
   }
-  #comingsoon {
+  #countdown-area {
     .container {
-      flex-direction: row;
+      flex-direction: column;
     }
+  }
+  #up-arrow {
+    left: 47%;
   }
   #countdown {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+}
+
+@keyframes oscillate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
   }
 }
