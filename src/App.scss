@@ -65,10 +65,13 @@ ul {
   padding: 0 5px;
 }
 #logo {
-  font: 900 1.8rem $font1;
-  letter-spacing: 1px;
-  padding: 2px 5px;
-  border: solid 2px var(--accent);
+  z-index: -1;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 25rem;
+  opacity: 0.7;
+  mix-blend-mode: screen;
 }
 #hero {
   height: 100vh;

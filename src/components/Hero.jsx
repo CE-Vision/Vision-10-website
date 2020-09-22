@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from "../assets/Vision Logo.svg";
 
 export default function Hero() {
   return (
@@ -10,6 +11,7 @@ export default function Hero() {
               <h1>VISION</h1>
               <span id="x">X</span>
             </div>
+            <img id="logo" src={Logo} alt="" />
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 512.008 512.008"
