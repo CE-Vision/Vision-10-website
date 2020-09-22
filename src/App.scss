@@ -191,6 +191,25 @@ header {
 #countdown {
   flex-direction: column;
 }
+footer {
+  background: $black;
+  font-weight: 700;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    color: var(--sfg);
+
+    svg {
+      height: 1.6rem;
+      width: 1.6rem;
+      path {
+        fill: var(--sfg);
+      }
+    }
+  }
+}
 @media screen and (max-width: 780px) {
   .container {
     max-width: 480px;
