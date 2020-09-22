@@ -62,7 +62,7 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 1rem;
 }
 #logo {
   z-index: -1;
@@ -183,16 +183,23 @@ header {
   h1 {
     font-size: 8rem;
   }
+  #time {
+    font-size: 7.5rem;
+  }
 }
-#time {
-  font-size: 7.5rem;
-}
+
 #countdown {
   flex-direction: column;
 }
 @media screen and (max-width: 780px) {
   .container {
     max-width: 480px;
+  }
+  .flexcont {
+    justify-content: space-between;
+    span {
+      margin: 0 1rem;
+    }
   }
   .vision {
     h1 {
@@ -217,6 +224,9 @@ header {
   }
   #countdown {
     flex-direction: column-reverse;
+    #time {
+      font-size: 5rem;
+    }
   }
 }
 
