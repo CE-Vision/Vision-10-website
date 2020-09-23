@@ -10,6 +10,8 @@ function App() {
     <>
       <Hero />
       <CountdownArea />
+      <container>
+      </container>
       <Footer />
     </>
   );

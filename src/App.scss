@@ -135,14 +135,14 @@ ul {
 header {
   position: sticky;
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
-  height: 5rem;
+  height: 6rem;
   ul {
     font-weight: 700;
     li {
       display: inline-block;
-      padding: 1rem 0rem 1rem 2rem;
+      padding: 1rem 0rem 1rem 3rem;
       a {
         font-size: 1.6rem;
         &::after {
@@ -159,6 +159,7 @@ header {
         &:hover {
           &::after {
             opacity: 0.6;
+            transition: all .3s ease-in-out;
           }
         }
       }
