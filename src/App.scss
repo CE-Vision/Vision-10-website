@@ -22,8 +22,8 @@ html {
   text-rendering: optimizeLegibility;
   scroll-behavior: smooth;
   scroll-snap-type: mandatory;
-  scroll-snap-points-y: repeat(100vh);
   scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 body {
   margin: 0;
@@ -101,7 +101,7 @@ ul {
   height: 3.5rem;
   left: 50%;
   bottom: 5.5rem;
-  animation: oscillate 1.5s cubic-bezier(0.785, 0.135, 0.15, 0.86) infinite;
+  animation: oscillate 1.5s ease-in-out infinite;
   path {
     fill: var(--accent);
   }
@@ -117,8 +117,10 @@ ul {
   align-items: center;
   h1 {
     font-size: 10rem;
-
+    overflow: hidden;
     padding: 2rem 0;
+    transition: ease-in-out;
+    animation: vision 1.2s ease-in-out;
   }
   #x {
     position: absolute;
@@ -126,6 +128,7 @@ ul {
     transform: translateX(18rem);
     font: 900 16rem $font1;
     color: var(--accent);
+    animation: X 1.2s ease-in-out;
   }
 }
 
@@ -170,7 +173,7 @@ header {
 #countdown-area {
   padding: 5rem 0;
   background: var(--accent);
-  height: 100vh;
+  height: 50vh;
   scroll-snap-align: start;
   .container {
     display: flex;
@@ -269,5 +272,31 @@ footer {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes X {
+  0% {
+    transform: scale(1.5);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: translateX(initial);
+  }
+}
+@keyframes vision {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  50% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    width: 100%;
+    opacity: 1;
   }
 }

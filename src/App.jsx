@@ -2,6 +2,7 @@ import React from "react";
 import Hero from "./components/Hero";
 import CountdownArea from "./components/CountdownArea";
 import "./App.scss";
+import Background from "./components/Background";
 
 function App() {
   return (
