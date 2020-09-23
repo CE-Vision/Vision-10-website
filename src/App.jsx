@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   useEffect(() => {
-    const STAR_COUNT = (window.innerWidth + window.innerHeight) / 12,
+    const STAR_COUNT = (window.innerWidth + window.innerHeight) / 6,
       STAR_SIZE = 3,
       STAR_MIN_SCALE = 0.2,
       OVERFLOW_THRESHOLD = 50;
@@ -22,7 +22,7 @@ function App() {
 
     let pointerX, pointerY;
 
-    let velocity = { x: 0, y: 0, tx: 0, ty: 0, z: 0.0005 };
+    let velocity = { x: 0.01, y: 0.01, tx: 0, ty: 0, z: 0.001 };
 
     let touchInput = false;
 
@@ -171,8 +171,10 @@ function App() {
         let ox = x - pointerX,
           oy = y - pointerY;
 
-        velocity.tx = velocity.tx + (ox / 8) * scale * (touchInput ? 1 : -1);
-        velocity.ty = velocity.ty + (oy / 8) * scale * (touchInput ? 1 : -1);
+        velocity.tx =
+          velocity.tx + (ox / 42) * scale * 0.6 * (touchInput ? 1 : -1);
+        velocity.ty =
+          velocity.ty + (oy / 42) * scale * 0.6 * (touchInput ? 1 : -1);
       }
 
       pointerX = x;
