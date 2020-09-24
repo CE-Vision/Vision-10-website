@@ -3,7 +3,7 @@ import "./scss/App.scss";
 import Hero from "./components/Hero";
 import CountdownArea from "./components/CountdownArea";
 import Footer from "./components/Footer";
-import Event from "./components/Event";
+import Events from "./components/Events";
 
 export default function App() {
   useEffect(() => {
@@ -202,14 +202,13 @@ export default function App() {
     }
   });
   const ref1 = useRef(null);
+
   return (
     <>
       <canvas ref={ref1}> </canvas>
       <Hero />
       <CountdownArea />
-      <div className="container">
-        <Event />
-      </div>
+      <Events />
       <Footer />
     </>
   );

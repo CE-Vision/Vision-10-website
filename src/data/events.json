@@ -1,144 +1,144 @@
-{
-  "NON-TECH": [
-    {
-      "Gaming Rumble": {
-        "tagline": "Let the fun begin!",
-        "image": "",
-        "rounds": [
-          {
-            "name": "Among Us",
-            "tagline": "Me thi,tum thi,Me thi, tum thi, kaun tha?",
-            "time": "",
-            "participation": "",
-            "info": "The game takes place in a space-themed setting where players each take on one of two roles, most being Crewmates, and a predetermined number being Impostors. The goal for the Crewmates is to identify the Impostors, eliminate them, and complete tasks around the map, and the Impostors’ goal is to kill the Crewmates without being identified.\nThere will be numerous sub-rounds in this game. Your goal will be to survive as long as possible (if you are a Crewmates) or to kill most number of Crewmates (if you are the Imposter). You will not be allowed to talk when the game is going on, you may discuss when someone reports a dead body or when there is an emergency meeting called in by a fellow Crewmates. If the person is found using abusive or offensive language of any sort him/her would be eliminated from the game right away."
-          },
-          {
-            "name": "Skribbl.io",
-            "tagline": "Gareebo ka Leonardo da Vinci",
-            "time": "",
-            "participation": "",
-            "info": "One game consists of a few rounds in which every round someone has to draw their chosen word and others have to guess it to gain points! When its your turn to draw, you will have to choose a word from three options and describe that word in 80 seconds, alternatively when somebody else is drawing you have to type your guess into the chat to gain points, be quick, the earlier you guess a word the more points you get!\nThe person with the most points at the end of game will then be crowned as the winner!"
-          }
-        ]
+[
+  {
+    "category": "NON-TECH",
+    "eventname": "Gaming Rumble",
+    "tagline": "Let the fun begin!",
+    "image": "",
+    "rounds": [
+      {
+        "name": "Among Us",
+        "tagline": "Me thi,tum thi,Me thi, tum thi, kaun tha?",
+        "time": "",
+        "participation": "",
+        "info": "The game takes place in a space-themed setting where players each take on one of two roles, most being Crewmates, and a predetermined number being Impostors. The goal for the Crewmates is to identify the Impostors, eliminate them, and complete tasks around the map, and the Impostors’ goal is to kill the Crewmates without being identified.\nThere will be numerous sub-rounds in this game. Your goal will be to survive as long as possible (if you are a Crewmates) or to kill most number of Crewmates (if you are the Imposter). You will not be allowed to talk when the game is going on, you may discuss when someone reports a dead body or when there is an emergency meeting called in by a fellow Crewmates. If the person is found using abusive or offensive language of any sort him/her would be eliminated from the game right away."
+      },
+      {
+        "name": "Skribbl.io",
+        "tagline": "Gareebo ka Leonardo da Vinci",
+        "time": "",
+        "participation": "",
+        "info": "One game consists of a few rounds in which every round someone has to draw their chosen word and others have to guess it to gain points! When its your turn to draw, you will have to choose a word from three options and describe that word in 80 seconds, alternatively when somebody else is drawing you have to type your guess into the chat to gain points, be quick, the earlier you guess a word the more points you get!\nThe person with the most points at the end of game will then be crowned as the winner!"
       }
-    },
-    {
-      "Blast and Hunt": {
-        "tagline": "Oh so you're trying to hunt?",
-        "image": "",
-        "rounds": [
-          {
-            "name": "Memogram",
-            "tagline": "Bahut tej ho rahe ho!!",
-            "time": "",
-            "participation": "",
-            "info": "Event manager gives meme. Participants have to identify the meme and enact a part of it. The team which identifies the maxium memes with relevant enactment will proceed to next round. It is an elimination round."
-          },
-          {
-            "name": "Rapid Writer",
-            "tagline": "Shabdo ki Uljhan",
-            "time": "",
-            "participation": "",
-            "info": "Guess the  riddle! The one who guess it correctly will get a chance to choose 2 letters from 26 alphabet. At last, the one who has maximum letters and the one who makes maximum words from it wins the round. It’s an elimination round."
-          },
-          {
-            "name": "Scavenger Hunt",
-            "tagline": "Dhyan se padhye sare saval sabke he gar me milege javab..!!",
-            "time": "",
-            "participation": "",
-            "info": "Guess the riddle!! As soon as you solve the riddle you have to show the things in camera. The team which takes the less time to solve all the riddles will be crowned as champions."
-          }
-        ]
+    ]
+  },
+
+  {
+    "category": "NON-TECH",
+    "eventname": "Blast and Hunt",
+    "tagline": "Oh so you're trying to hunt?",
+    "image": "",
+    "rounds": [
+      {
+        "name": "Memogram",
+        "tagline": "Bahut tej ho rahe ho!!",
+        "time": "",
+        "participation": "",
+        "info": "Event manager gives meme. Participants have to identify the meme and enact a part of it. The team which identifies the maxium memes with relevant enactment will proceed to next round. It is an elimination round."
+      },
+      {
+        "name": "Rapid Writer",
+        "tagline": "Shabdo ki Uljhan",
+        "time": "",
+        "participation": "",
+        "info": "Guess the  riddle! The one who guess it correctly will get a chance to choose 2 letters from 26 alphabet. At last, the one who has maximum letters and the one who makes maximum words from it wins the round. It’s an elimination round."
+      },
+      {
+        "name": "Scavenger Hunt",
+        "tagline": "Dhyan se padhye sare saval sabke he gar me milege javab..!!",
+        "time": "",
+        "participation": "",
+        "info": "Guess the riddle!! As soon as you solve the riddle you have to show the things in camera. The team which takes the less time to solve all the riddles will be crowned as champions."
       }
-    },
-    {
-      "The Wisdom Wizard": {
-        "tagline": "Samajte ho cool apne apko tum, toh karke dekho issko tum",
-        "image": "",
-        "rounds": [
-          {
-            "name": "The rapid fire",
-            "tagline": "Dare u to find correct answer",
-            "time": "",
-            "participation": "Group",
-            "info": "Its a question answer round where they will participate in a group made by event managing team. Teams with maximum points get to next round. This round will be elimination round."
-          },
-          {
-            "name": "Emoji Gamble",
-            "tagline": "Muh to bana lete ho,ab samaj kar bhi dekho.",
-            "time": "",
-            "participation": "Solo",
-            "info": "They will be given a set of emoji and they have to find out the correct movie or song name related to it. It is an elimination Round"
-          },
-          {
-            "name": "Mind Twister",
-            "tagline": "Na keh paye Ha,Na keh paye Naa",
-            "time": "",
-            "participation": "Solo",
-            "info": "Questions will be asked of yes or no type. But they cannot be answered in yes or no and will be given 2 seconds to answer it. There will be one or two warnings given and third will be last warning in which they would be disqualified. The one with maximum points wins the game."
-          }
-        ]
+    ]
+  },
+
+  {
+    "category": "NON-TECH",
+    "eventname": "The Wisdom Wizard",
+    "tagline": "Samajte ho cool apne apko tum, toh karke dekho issko tum",
+    "image": "",
+    "rounds": [
+      {
+        "name": "The rapid fire",
+        "tagline": "Dare u to find correct answer",
+        "time": "",
+        "participation": "Group",
+        "info": "Its a question answer round where they will participate in a group made by event managing team. Teams with maximum points get to next round. This round will be elimination round."
+      },
+      {
+        "name": "Emoji Gamble",
+        "tagline": "Muh to bana lete ho,ab samaj kar bhi dekho.",
+        "time": "",
+        "participation": "Solo",
+        "info": "They will be given a set of emoji and they have to find out the correct movie or song name related to it. It is an elimination Round"
+      },
+      {
+        "name": "Mind Twister",
+        "tagline": "Na keh paye Ha,Na keh paye Naa",
+        "time": "",
+        "participation": "Solo",
+        "info": "Questions will be asked of yes or no type. But they cannot be answered in yes or no and will be given 2 seconds to answer it. There will be one or two warnings given and third will be last warning in which they would be disqualified. The one with maximum points wins the game."
       }
-    }
-  ],
-  "TECH": [
-    {
-      "Race to Reality": {
-        "tagline": "Map to success",
-        "image": "",
-        "rounds": [
-          {
-            "name": "Wheel of Technology",
-            "tagline": "Spin it, Win it",
-            "time": "30",
-            "participation": "Solo",
-            "info": "Participants have to spin the wheel and whichever topic comes, questions related to that topic will be asked to them. Total 15 questions of MCQ type will be asked. A Bonus Question at the end to score extra points. (negative marking applicable for bonus question) (optional)"
-          },
-          {
-            "name": "Technical Hunt",
-            "tagline": "Clear vision holds the key",
-            "time": "60",
-            "participation": "Solo or Team(Max members: 2)",
-            "info": "Participants would be given a Google drive link with locked folders in it. They would have to solve Riddles to unlock the next folder. The Password would be a Single Word, Number or Alphanumeric. First 15 participants to complete it first would be selected for next round."
-          },
-          {
-            "name": "Race Horizon",
-            "tagline": "Catch Me if You can",
-            "time": "60",
-            "participation": "Solo",
-            "info": "A picture will be shown for 15-20 seconds for observing and then participants have to make the nearest possible picture. (HTML CSS). Participants will be given maximum 20 minutes for each one. Result will be time based with nearest or correct resemblance."
-          }
-        ]
+    ]
+  },
+
+  {
+    "category": "TECH",
+    "eventname": "Race to Reality",
+    "tagline": "Map to success",
+    "image": "",
+    "rounds": [
+      {
+        "name": "Wheel of Technology",
+        "tagline": "Spin it, Win it",
+        "time": "30",
+        "participation": "Solo",
+        "info": "Participants have to spin the wheel and whichever topic comes, questions related to that topic will be asked to them. Total 15 questions of MCQ type will be asked. A Bonus Question at the end to score extra points. (negative marking applicable for bonus question) (optional)"
+      },
+      {
+        "name": "Technical Hunt",
+        "tagline": "Clear vision holds the key",
+        "time": "60",
+        "participation": "Solo or Team(Max members: 2)",
+        "info": "Participants would be given a Google drive link with locked folders in it. They would have to solve Riddles to unlock the next folder. The Password would be a Single Word, Number or Alphanumeric. First 15 participants to complete it first would be selected for next round."
+      },
+      {
+        "name": "Race Horizon",
+        "tagline": "Catch Me if You can",
+        "time": "60",
+        "participation": "Solo",
+        "info": "A picture will be shown for 15-20 seconds for observing and then participants have to make the nearest possible picture. (HTML CSS). Participants will be given maximum 20 minutes for each one. Result will be time based with nearest or correct resemblance."
       }
-    },
-    {
-      "Decipher the Matrix": {
-        "tagline": "Escape the Virtual Reality",
-        "image": "",
-        "rounds": [
-          {
-            "name": "Jibber Jabber",
-            "tagline": "Get, Set to Guess",
-            "time": "20",
-            "participation": "Solo",
-            "info": "The Event Manager will give participants a list of jumbled words. Participants have to guess the gibberish within a fixed period of time. The results will be based on number of words the participants have guessed."
-          },
-          {
-            "name": "Blockbusters",
-            "tagline": "Let’s get Tactical!",
-            "time": "30",
-            "participation": "Solo",
-            "info": "Event host will provide links to various folders. Folders will be having pieces of code of different web pages. Participants will have to try arranging pieces of code from different folders and make the webpage. The created web page should be having its matching pieces of code. This round will be time constrained. Participants with the most accurate final webpage will be selected."
-          },
-          {
-            "name": "Runaway",
-            "tagline": "It’s the Duel of Minds.",
-            "time": "40",
-            "participation": "Solo",
-            "info": "This event will be conducted in Google form. The participant have to solve the given riddle and select the correct option.  Every correct answer will lead them to the right path and every wrong answer will lead them to wrong path. The first person to complete this round will be the winner."
-          }
-        ]
+    ]
+  },
+
+  {
+    "category": "TECH",
+    "eventname": "Decipher the Matrix",
+    "tagline": "Escape the Virtual Reality",
+    "image": "",
+    "rounds": [
+      {
+        "name": "Jibber Jabber",
+        "tagline": "Get, Set to Guess",
+        "time": "20",
+        "participation": "Solo",
+        "info": "The Event Manager will give participants a list of jumbled words. Participants have to guess the gibberish within a fixed period of time. The results will be based on number of words the participants have guessed."
+      },
+      {
+        "name": "Blockbusters",
+        "tagline": "Let’s get Tactical!",
+        "time": "30",
+        "participation": "Solo",
+        "info": "Event host will provide links to various folders. Folders will be having pieces of code of different web pages. Participants will have to try arranging pieces of code from different folders and make the webpage. The created web page should be having its matching pieces of code. This round will be time constrained. Participants with the most accurate final webpage will be selected."
+      },
+      {
+        "name": "Runaway",
+        "tagline": "It’s the Duel of Minds.",
+        "time": "40",
+        "participation": "Solo",
+        "info": "This event will be conducted in Google form. The participant have to solve the given riddle and select the correct option.  Every correct answer will lead them to the right path and every wrong answer will lead them to wrong path. The first person to complete this round will be the winner."
       }
-    }
-  ]
-}
+    ]
+  }
+]

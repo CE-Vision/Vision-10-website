@@ -1,19 +1,17 @@
-{
-  "type": [
-    {
-      "eventName": {
+[
+  {
+    "category": "",
+    "eventname": "",
+    "tagline": "",
+    "image": "",
+    "rounds": [
+      {
+        "name": "",
         "tagline": "",
-        "image": "",
-        "rounds": [
-          {
-            "name": "",
-            "tagline": "",
-            "time": "minutes",
-            "participation": "",
-            "info": ""
-          }
-        ]
+        "time": "minutes",
+        "participation": "",
+        "info": ""
       }
-    }
-  ]
-}
+    ]
+  }
+]

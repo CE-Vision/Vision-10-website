@@ -1,51 +1,56 @@
 @import "./vars.scss";
 
-.card{
-    display: inline-flex;
-    justify-content: space-evenly;
-    align-items: center;
-    background: #fff;
-    color: var(--pbg);
-    margin: 5rem;
-    padding: 7.5rem;
-    border-radius: 2rem;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
-    .evntImg{
+.card {
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: #fff;
+  color: var(--pbg);
+  margin: 5rem;
+  padding: 7.5rem;
+  border-radius: 2rem;
+  width: 110rem;
+  max-width: 110rem;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  .evntImg {
     height: 25rem;
     width: 25rem;
-    margin:  0 2rem 0 0;
+    margin: 0 2rem 0 0;
     border-radius: 2rem;
     background: #777;
-    box-shadow: 0 0 25px rgba(0, 0, 0, .1);
-    }
-    .evntTxt{
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+  .evntTxt {
     margin-left: 2rem;
+    p {
+      margin-top: 0.7em;
     }
-    #more{
-        display: flex;
-        width: max-content;
-        justify-content: right;
-        align-self: end;
-        margin-top: 1rem;
-        color: var(--accent);
-        font: 700 1.4rem $font2;
-    }
+  }
+  #more {
+    display: flex;
+    width: max-content;
+    justify-content: right;
+    align-self: end;
+    margin-top: 1rem;
+    color: var(--accent);
+    font: 700 1.4rem $font2;
+  }
 }
 
 @media screen and (max-width: 780px) {
-    .card{
-        padding: 2.5rem;
-       flex-direction: column; 
-       .evntImg{
-           width: 100%;
-        margin: 0 0 1rem 0;   
+  .card {
+    padding: 2.5rem;
+    flex-direction: column;
+    .evntImg {
+      width: 100%;
+      margin: 0 0 1rem 0;
     }
-    .evntTxt{
-    margin: 1rem auto 0;
-    padding: 0 1rem;
+    .evntTxt {
+      margin: 1rem auto 0;
+      padding: 0 1rem;
     }
-    #more{
-        width: 100%;
+    #more {
+      width: 100%;
     }
-    }
+  }
 }
