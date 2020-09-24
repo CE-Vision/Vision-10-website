@@ -25,7 +25,7 @@ const Events = () => {
         loop={true}
         centeredSlides={true}
         spaceBetween={10}
-        slidesPerView={"1"}
+        slidesPerView={"1.20"}
         setWrapperSize={true}
         speed={1000}
         autoplay={{ delay: 1000 }}
