@@ -6,7 +6,7 @@ import Event from "./Event";
 
 import "swiper/swiper.scss";
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use(Autoplay);
 
 const Events = () => {
   return (
