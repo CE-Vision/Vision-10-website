@@ -14,9 +14,7 @@ export default function App() {
       <Header />
       <Hero />
       <CountdownArea />
-      <div className="container">
-        <Event />
-      </div>
+      <Events />
       <Footer />
     </>
   );
