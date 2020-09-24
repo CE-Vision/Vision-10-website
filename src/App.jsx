@@ -4,7 +4,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import CountdownArea from "./components/CountdownArea";
 import Footer from "./components/Footer";
-import Event from "./components/Event";
+import Events from "./components/Events";
 import Background from "./components/Background";
 
 export default function App() {

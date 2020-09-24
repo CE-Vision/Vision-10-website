@@ -1,21 +1,26 @@
 @import "./vars.scss";
 
+#card-wrapper {
+  margin: auto;
+  width: fit-content;
+}
 .card {
   display: inline-flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
   background: #fff;
   color: var(--pbg);
-  margin: 5rem;
-  padding: 7.5rem;
+  margin: 5rem auto;
+  padding: 7.5rem 7.5rem;
   border-radius: 2rem;
   width: 110rem;
   max-width: 110rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
   .evntImg {
-    height: 25rem;
-    width: 25rem;
-    margin: 0 2rem 0 0;
+    height: 30rem;
+    width: 35rem;
+    margin: 0 1rem 0 0;
     border-radius: 2rem;
     background: #777;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
@@ -37,20 +42,25 @@
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 1080px) {
   .card {
     padding: 2.5rem;
     flex-direction: column;
+    width: 35rem;
+    height: 45rem;
     .evntImg {
       width: 100%;
       margin: 0 0 1rem 0;
     }
     .evntTxt {
-      margin: 1rem auto 0;
+      margin: 1rem 0 0;
       padding: 0 1rem;
+      text-align: center;
     }
     #more {
+      cursor: pointer;
       width: 100%;
+      justify-self: flex-end;
     }
   }
 }
