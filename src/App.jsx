@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from "react";
 import "./scss/App.scss";
-import "./App.scss";
 import Hero from "./components/Hero";
 import CountdownArea from "./components/CountdownArea";
 import Footer from "./components/Footer";
