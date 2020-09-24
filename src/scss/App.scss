@@ -17,6 +17,13 @@
     sans-serif;
   box-sizing: border-box;
 }
+canvas {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+}
+
 html {
   font-size: 10px;
   text-rendering: optimizeLegibility;
