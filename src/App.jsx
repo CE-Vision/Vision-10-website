@@ -14,7 +14,7 @@ export default function App() {
       <Header />
       <Hero />
       <CountdownArea />
-      <Events />
+      <Event />
       <Footer />
     </>
   );
