@@ -5,16 +5,6 @@ export default function Hero() {
   return (
     <div id="hero">
       <div className="container">
-        <header>
-          <ul>
-            <li>
-              <a>Events</a>
-            </li>
-            <li>
-              <a>Team</a>
-            </li>
-          </ul>
-        </header>
         <div id="hero-content">
           <div className="vision">
             <h1>VISION</h1>
