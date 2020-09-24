@@ -1,5 +1,5 @@
 import React from "react";
-import "./background.scss";
+import "../scss/background.scss";
 
 export default function Background() {
   const STAR_COUNT = (window.innerWidth + window.innerHeight) / 8,

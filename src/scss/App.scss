@@ -80,18 +80,18 @@ ul {
   height: 100vh;
   background: $black;
   scroll-snap-align: start;
-  &::before {
-    content: "";
-    z-index: -1;
-    position: fixed;
-    display: block;
-    opacity: 0.15;
-    height: 100%;
-    width: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-image: url(./assets/static-bg.gif);
-  }
+  // &::before {
+  //   content: "";
+  //   z-index: -1;
+  //   position: fixed;
+  //   display: block;
+  //   opacity: 0.15;
+  //   height: 100%;
+  //   width: 100%;
+  //   background-attachment: fixed;
+  //   background-position: center;
+  //   background-image: url(./assets/static-bg.gif);
+  // }
   #hero-content {
     text-align: center;
   }

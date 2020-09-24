@@ -1,12 +1,11 @@
 import React from "react";
-import "./App.scss";
+import "./scss/App.scss";
 import Hero from "./components/Hero";
 import CountdownArea from "./components/CountdownArea";
-import "./App.scss";
 import Footer from "./components/Footer";
 import Event from "./components/Event";
 
-function App() {
+export default function App() {
   return (
     <>
       <Hero />
@@ -18,5 +17,3 @@ function App() {
     </>
   );
 }
-
-export default App;
