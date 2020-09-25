@@ -1,16 +1,19 @@
 import React from "react";
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import event from "../data/events.json";
 import Event from "./Event";
 
 import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
 
-SwiperCore.use([Autoplay]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Events = () => {
   return (
-    <div className="container">
+    <div className="container" id="events">
       <h1
         style={{
           textAlign: "center",
@@ -26,7 +29,10 @@ const Events = () => {
         centeredSlides={true}
         spaceBetween={10}
         slidesPerView={"1.20"}
+        pagination={{ clickable: true }}
+        navigation
         setWrapperSize={true}
+        scrollbar={{ draggable: true }}
         speed={1000}
         autoplay={{ delay: 1000 }}
         data-swiper-autoplay={2000}
