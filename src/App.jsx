@@ -6,6 +6,7 @@ import CountdownArea from "./components/CountdownArea";
 import Footer from "./components/Footer";
 import Events from "./components/Events";
 import Background from "./components/Background";
+import Team from "./components/Team";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
       <Hero />
       <CountdownArea />
       <Events />
+      <Team />
       <Footer />
     </>
   );

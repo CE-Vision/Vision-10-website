@@ -155,7 +155,8 @@ header {
       display: inline-block;
       padding: 1rem 0rem 1rem 3rem;
       a {
-        font-size: 1.6rem;
+        font: 700 1.6rem $font1;
+        color: var(--pfg);
         &::after {
           content: "";
           z-index: -5;

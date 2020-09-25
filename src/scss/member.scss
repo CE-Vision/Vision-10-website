@@ -1,0 +1,52 @@
+@import "./vars";
+
+.member {
+  display: inline-block;
+  margin: 1rem;
+  &:hover {
+    .text::before {
+      height: 100%;
+    }
+  }
+  .img {
+    z-index: 10;
+    margin: auto;
+    height: 20rem;
+    width: 20rem;
+    border-radius: 1.5rem;
+    background: #777;
+  }
+  .text {
+    &::before {
+      content: "";
+      top: 0;
+      left: 0;
+      z-index: -2;
+      position: absolute;
+      display: block;
+      background: $accent;
+      height: 0;
+      width: 100%;
+      transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    z-index: -1;
+    position: relative;
+    top: -12rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    padding: 13.5rem 1rem 2rem 1rem;
+    width: 28rem;
+    text-align: center;
+    border-radius: 1.5rem;
+    background: var(--sbg);
+  }
+  .links {
+    margin-top: 1.5rem;
+    img {
+      height: 2rem;
+      &:hover {
+        box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
