@@ -56,7 +56,7 @@
     "category": "NON-TECH",
     "eventname": "The Wisdom Wizard",
     "tagline": "Samajte ho cool apne apko tum, toh karke dekho issko tum",
-    "image": "https://github.com/CE-Vision/vision-10-graphics/blob/main/NON_TECH/WisdomWizard.png?raw=true",
+    "image": "https://raw.githubusercontent.com/CE-Vision/vision-10-graphics/main/NON_TECH/WisdomWizard.png",
     "rounds": [
       {
         "name": "The rapid fire",
@@ -86,7 +86,7 @@
     "category": "TECH",
     "eventname": "Race to Reality",
     "tagline": "Map to success",
-    "image": "https://github.com/CE-Vision/vision-10-graphics/blob/main/TECH/Race2Reality.png?raw=true",
+    "image": "https://raw.githubusercontent.com/CE-Vision/vision-10-graphics/main/TECH/Race2Reality.png",
     "rounds": [
       {
         "name": "Wheel of Technology",
@@ -116,7 +116,7 @@
     "category": "TECH",
     "eventname": "Decipher the Matrix",
     "tagline": "Escape the Virtual Reality",
-    "image": "https://github.com/CE-Vision/vision-10-graphics/blob/main/TECH/DecipherMatrix.png?raw=true",
+    "image": "https://raw.githubusercontent.com/CE-Vision/vision-10-graphics/main/TECH/DecipherMatrix.png",
     "rounds": [
       {
         "name": "Jibber Jabber",
