@@ -4,8 +4,18 @@ import Member from "./Member";
 export default function Team() {
   return (
     <>
-      <div className="container">
-        <Member />
+      <div id="team">
+        <div className="container">
+          <h1>Meet the Team</h1>
+          <div id="card-wrapper">
+            <Member />
+            <Member />
+            <Member />
+            <Member />
+            <Member />
+            <Member />
+          </div>
+        </div>
       </div>
     </>
   );

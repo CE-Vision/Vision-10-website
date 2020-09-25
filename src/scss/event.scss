@@ -2,7 +2,8 @@
 
 #card-wrapper {
   margin: auto;
-  margin-right: -10px;
+  display: flex;
+  flex-wrap: wrap;
   width: fit-content;
 }
 .card {

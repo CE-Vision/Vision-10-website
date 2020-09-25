@@ -11,7 +11,7 @@ export default function Member() {
           <h2>John Doe</h2>
           <p>Lorem ipsum dolor sit amet.</p>
           <div className="links">
-            <img src={github} />
+            <img src={github} alt="" />
           </div>
         </div>
       </div>

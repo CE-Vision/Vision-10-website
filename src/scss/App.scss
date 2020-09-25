@@ -47,6 +47,7 @@ h3 {
 }
 a {
   cursor: pointer;
+  text-decoration: none;
 }
 i {
   color: var(--accent);
@@ -117,7 +118,7 @@ ul {
   justify-content: center;
   align-items: center;
   h1 {
-    font-size: 10rem;
+    font-size: 15rem;
     overflow: hidden;
     padding: 2rem 0;
     transition: ease-in-out;
@@ -126,8 +127,8 @@ ul {
   #x {
     position: absolute;
     z-index: 1;
-    transform: translateX(18rem);
-    font: 900 16rem $font1;
+    transform: translateX(26rem);
+    font: 900 26rem $font1;
     color: var(--accent);
     animation: X 1.2s ease-in-out;
   }
@@ -193,6 +194,13 @@ header {
       text-shadow: 2px 2px #000;
       box-shadow: 2px 2px #fff;
     }
+  }
+}
+#team {
+  background: $black;
+  h1 {
+    margin: auto;
+    width: fit-content;
   }
 }
 #coming-soon {

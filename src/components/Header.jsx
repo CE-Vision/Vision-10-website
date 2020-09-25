@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
 
 export default class Header extends Component {
   state = {
@@ -30,10 +31,12 @@ export default class Header extends Component {
         <div className="container">
           <ul>
             <li>
-              <a>Events</a>
+              <NavLink to="/" exact>
+                Event
+              </NavLink>
             </li>
             <li>
-              <a>Team</a>
+              <NavLink to="/team">Team</NavLink>
             </li>
             <li>
               <button
