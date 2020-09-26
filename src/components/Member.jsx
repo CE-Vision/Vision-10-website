@@ -2,14 +2,16 @@ import React from "react";
 import "../scss/member.scss";
 import github from "../assets/github.png";
 
-export default function Member() {
+export default function Member(props) {
   return (
     <>
       <div className="member">
-        <div className="img"></div>
+        <div className="img">
+          <img src={props.img} alt="" />
+        </div>
         <div className="text">
-          <h2>John Doe</h2>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <h2>{props.name}</h2>
+          <p>{props.post}</p>
           <div className="links">
             <img src={github} alt="" />
           </div>

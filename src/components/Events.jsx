@@ -174,7 +174,12 @@ const Events = () => {
         loop={true}
         centeredSlides={true}
         spaceBetween={10}
-        slidesPerView={"1.20"}
+        breakpoints={{
+          1080: {
+            slidesPerView: "1.25",
+          },
+        }}
+        slidesPerView={"1.25"}
         pagination={{ clickable: true }}
         navigation
         setWrapperSize={true}
