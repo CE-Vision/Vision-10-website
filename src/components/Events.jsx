@@ -23,6 +23,7 @@ const Events = () => {
                 eventTitle={event.eventname}
                 eventTagline={event.tagline}
                 img={event.image}
+                type={event.category}
               />
             </div>
           </SwiperSlide>
@@ -41,6 +42,7 @@ const Events = () => {
                 eventTitle={event.eventname}
                 eventTagline={event.tagline}
                 img={event.image}
+                type={event.category}
               />
             </div>
           </SwiperSlide>
@@ -58,6 +60,7 @@ const Events = () => {
                 eventTitle={event.eventname}
                 eventTagline={event.tagline}
                 img={event.image}
+                type={event.category}
               />
             </div>
           </SwiperSlide>
@@ -126,6 +129,7 @@ const Events = () => {
               eventTitle={event.eventname}
               eventTagline={event.tagline}
               img={event.image}
+              type={event.category}
             />
           </div>
         </SwiperSlide>

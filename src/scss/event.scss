@@ -16,6 +16,7 @@
 }
 
 .chip {
+  cursor: pointer;
   display: inline-block;
   padding: 12px 25px;
   align-items: center;
@@ -29,6 +30,7 @@
   color: var(--accent);
 }
 .chipActive {
+  cursor: pointer;
   display: inline-block;
   padding: 12px 25px;
   align-items: center;
@@ -39,6 +41,17 @@
   border-radius: 25px;
   background-color: #000000;
   // background-color: #c0c0c0;
+  color: var(--accent);
+}
+.tag {
+  display: inline-block;
+  padding: 8px;
+  // align-items: center;
+  // align-self: center;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 20px;
+  background-color: #000000;
   color: var(--accent);
 }
 .card {
@@ -73,15 +86,19 @@
     }
   }
   #more {
-    display: flex;
-    position: relative;
+    // display: flex;
+    // position: relative;
     width: max-content;
-    justify-self: flex-end;
-    align-self: end;
+    // justify-self: flex-end;
     margin-top: 1rem;
     color: var(--accent);
     font: 700 1.4rem $font2;
   }
+}
+.wrapper-footer-events {
+  display: inline;
+  justify-content: stretch;
+  right: 0;
 }
 img {
   width: 100%;
@@ -107,8 +124,8 @@ img {
     }
     #more {
       cursor: pointer;
-      position: relative;
-      right: 0;
+      // position: relative;
+      // right: 0;
       width: 100%;
     }
   }
