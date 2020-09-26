@@ -151,7 +151,7 @@ const Events = () => {
           Events
         </h1>
         <div className="wrapper">
-          <div
+          {/* <div
             className={chipState[0] ? "chipActive" : "chip"}
             onClick={() => {
               handleChipOnClick(0);
@@ -166,7 +166,7 @@ const Events = () => {
             }}
           >
             NON-TECH
-          </div>
+          </div> */}
         </div>
       </div>
 

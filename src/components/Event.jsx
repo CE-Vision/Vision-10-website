@@ -5,16 +5,17 @@ export default function Event(props) {
   return (
     <>
       <div className="card">
-        <div className="evntImg">
+        <div className="img">
           <img src={props.img} alt="" />
         </div>
-        <div className="evntTxt">
-          <h2>{props.eventTitle}</h2>
-          <p>{props.eventTagline}</p>
-        </div>
-        <div className="wrapper-footer-events">
-          <div id="more">More Info ></div>
-          <div className="tag">{props.type}</div>
+        <div className="txt">
+          <div>
+            <h2>{props.eventTitle}</h2>
+            <p>{props.eventTagline}</p>
+            <div className="tag">{props.type}</div>
+          </div>
+
+          <div id="more">Learn more > </div>
         </div>
       </div>
     </>
