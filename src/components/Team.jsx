@@ -8,48 +8,34 @@ export default function Team() {
       <div id="team">
         <div className="container">
           <h2>Meet the Team</h2>
+          {team["Department"].map((value, index) => {
+            return (
+              <Member name={value.name} post={value.post} img={value.photo} />
+            );
+          })}
+          <h2>Web and Graphics</h2>
           <div id="card-wrapper">
-            {team["Department"].map((value, index) => {
+            {team["WebNGraphics"].map((value, index) => {
               return (
                 <Member name={value.name} post={value.post} img={value.photo} />
               );
             })}
-            <h2>Web and Graphics</h2>
-            <div id="card-wrapper">
-              {team["WebNGraphics"].map((value, index) => {
-                return (
-                  <Member
-                    name={value.name}
-                    post={value.post}
-                    img={value.photo}
-                  />
-                );
-              })}
-            </div>
-            <h2>Tech</h2>
-            <div id="card-wrapper">
-              {team["Tech"].map((value, index) => {
-                return (
-                  <Member
-                    name={value.name}
-                    post={value.post}
-                    img={value.photo}
-                  />
-                );
-              })}
-            </div>
-            <h2>Non-Tech</h2>
-            <div id="card-wrapper">
-              {team["Non-Tech"].map((value, index) => {
-                return (
-                  <Member
-                    name={value.name}
-                    post={value.post}
-                    img={value.photo}
-                  />
-                );
-              })}
-            </div>
+          </div>
+          <h2>Tech</h2>
+          <div id="card-wrapper">
+            {team["Tech"].map((value, index) => {
+              return (
+                <Member name={value.name} post={value.post} img={value.photo} />
+              );
+            })}
+          </div>
+          <h2>Non-Tech</h2>
+          <div id="card-wrapper">
+            {team["Non-Tech"].map((value, index) => {
+              return (
+                <Member name={value.name} post={value.post} img={value.photo} />
+              );
+            })}
           </div>
         </div>
       </div>
