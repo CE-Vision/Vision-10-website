@@ -79,6 +79,7 @@
   h2 {
     font-size: 2.8rem;
     text-align: left;
+    padding: 1rem 0 0;
   }
   .img {
     min-width: 25.6 * 2.5rem;
@@ -93,7 +94,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 8rem;
+    margin-left: 2rem;
     height: 100%;
     width: 100%;
     color: var(--pfg);
@@ -126,7 +127,7 @@ img {
     justify-content: flex-start;
     flex-direction: column;
     width: 28rem;
-    height: 35rem;
+    height: 32rem;
 
     h2 {
       font-size: 2rem;
