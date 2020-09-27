@@ -9,7 +9,7 @@ export default function Info() {
         <p>
           Vision is the most awaited techfest for every student in SVIT. This
           year Computer Department presents you VISION 10, a legacy of our
-          department to provide the best symposium experience since 8 years.
+          department to provide the best symposium experience since 9 years.
           Vision gives you a platform and opportunities to take part in
           different events and activities.
         </p>
