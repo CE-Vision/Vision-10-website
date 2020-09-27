@@ -16,7 +16,7 @@ export default function Team() {
             })}
             <h2>Web and Graphics</h2>
             <div id="card-wrapper">
-              {team["Web and Graphics"].map((value, index) => {
+              {team["WebNGraphics"].map((value, index) => {
                 return (
                   <Member
                     name={value.name}
