@@ -31,7 +31,7 @@ export default function Event(props) {
 
   return (
     <>
-      {modalState ? (
+      {/* {modalState ? (
         <>
           <div
             className="Backdrop"
@@ -39,14 +39,14 @@ export default function Event(props) {
               setModalState(false);
             }}
           />
-          <Modal show={modalState} rounds={props.rounds}></Modal>
         </>
-      ) : null}
+      ) : null} */}
       <div
         className="card"
         onClick={() => {
-          console.log("onCLickFired");
-          setModalState(true);
+          props.showModal(props.rounds);
+          // console.log("onCLickFired");
+          // setModalState(true);
         }}
       >
         <div className="img">

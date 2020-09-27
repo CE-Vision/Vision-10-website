@@ -28,59 +28,65 @@
     }
   ],
 
-  "Web and Graphics": [
+  "WebNGraphics": [
+    {
+      "post": "Head",
+      "name": "Ayaan Retiwala",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GHead(Ayaan%20Retiwala).jpg",
+      "github": "https://github.com/LOLwierd",
+      "portfolio": "",
+      "linkedin": "https://www.linkedin.com/in/ayaan-retiwala-5400bb165/"
+    },
+
     {
       "post": "Head",
       "name": "Dweep Panchal",
-      "photo": "",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GHead(Dweep%20Panchal).jpg",
+      "github": "https://github.com/dweep612",
+      "portfolio": "https://dweeppanchal.now.sh/",
+      "linkedin": "https://www.linkedin.com/in/dweep612/"
     },
+
     {
       "post": "Head",
       "name": "Suraj Shah",
-      "photo": "",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GHead(Suraj%20Shah).jpg",
       "github": "",
       "portfolio": "",
-      "linkedin": ""
+      "linkedin": "http://linkedin.com/in/suraj-shah-35a285193"
     },
-    {
-      "post": "Head",
-      "name": "Ayaan Retiwala",
-      "photo": "",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
-    },
-    {
-      "post": "Head",
-      "name": "Ayaan Retiwala",
-      "photo": "",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
-    },
+
     {
       "post": "Co-Head",
       "name": "Trishala Swain",
-      "photo": "",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GCoHead(Trishala%20Swain).jpg",
+      "github": "https://github.com/trishala01",
+      "portfolio": "",
+      "linkedin": "https://www.linkedin.com/in/trishala-swain-07b062196"
+    },
+
+    {
+      "post": "Volunteer",
+      "name": "Ayush Patel",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Ayush%20Patel).jpg",
+      "github": "",
+      "portfolio": "",
+      "linkedin": "https://www.linkedin.com/in/ayush-patel-a947441b4"
+    },
+
+    {
+      "post": "Volunteer",
+      "name": "Vatsal Roy",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Vatsal%20Roy).jpg",
       "github": "",
       "portfolio": "",
       "linkedin": ""
     },
+
     {
       "post": "Volunteer",
-      "name": "Vraj Shah",
-      "photo": "",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
-    },
-    {
-      "post": "Volunteer",
-      "name": "Jay Patel",
-      "photo": "",
+      "name": "Nimit Trevadiya",
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Nimit%20Trevadiya).jpg",
       "github": "",
       "portfolio": "",
       "linkedin": ""

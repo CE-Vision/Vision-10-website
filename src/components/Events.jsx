@@ -125,7 +125,15 @@ const Events = () => {
         break;
     }
   }
+
+  function showModal(rounds) {
+    setEventRounds(rounds);
+    console.log("This is firing");
+    setModalState(true);
+  }
+
   const [chipState, changeChipState] = useState([1, 1]);
+  const [eventRounds, setEventRounds] = useState([]);
   const [swiperSlides, changeSlides] = useState(
     event.map((event, index) => {
       return (
@@ -138,24 +146,14 @@ const Events = () => {
                 img={event.image}
                 type={event.category}
                 rounds={event.rounds}
-                onClick={() => {
-                  console.log("onCLickFired");
-                  setModalState(true);
-                }}
+                showModal={showModal}
+                // onClick={() => {
+                //   console.log("onCLickFired");
+                //   setModalState(true);
+                // }}
               />
             </div>
           </SwiperSlide>
-          {modalState ? (
-            <>
-              <div
-                className="Backdrop"
-                onClick={() => {
-                  setModalState(false);
-                }}
-              />
-              <Modal show={modalState} rounds={event.rounds}></Modal>
-            </>
-          ) : null}
         </>
       );
     })
@@ -214,6 +212,12 @@ const Events = () => {
       >
         {swiperSlides}
       </Swiper>
+      {modalState ? (
+        <>
+          <div className="Backdrop" />
+          <Modal show={modalState} rounds={eventRounds}></Modal>
+        </>
+      ) : null}
     </div>
   );
 };
