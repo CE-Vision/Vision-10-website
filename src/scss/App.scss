@@ -1,7 +1,7 @@
 @import "./vars.scss";
 
 * {
-  --pbg: #333;
+  --pbg: #222;
   --sbg: #111;
   --pfg: #fafafa;
   --sfg: #eeeeee;
@@ -30,24 +30,17 @@ body {
   margin: 0;
   padding: 0;
   font-size: 14px;
+  line-height: 1.8;
   background: var(--pbg);
   color: var(--pfg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-h1 {
-  z-index: 2;
-  margin: 0;
-  padding: 0;
+h1,
+h2,
+h3,
+h4 {
   font-weight: 900;
-  font-size: 4.5rem;
-}
-h2 {
-  text-align: center;
-  font-size: 3rem;
-}
-h3 {
-  font: 400 1.2rem $font1;
 }
 a {
   cursor: pointer;
@@ -64,7 +57,7 @@ ul {
   width: 100%;
   height: 100%;
   max-width: 1280px;
-  padding: 0 2rem;
+  padding: 0 5rem;
   background: transparent;
 }
 .flexcont {
@@ -123,6 +116,7 @@ ul {
   justify-content: center;
   align-items: center;
   h1 {
+    z-index: 2;
     font-size: 15rem;
     overflow: hidden;
     padding: 2rem 0;
@@ -146,9 +140,10 @@ header {
   left: 0;
   height: 6rem;
   background: $black;
-  transition: top 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.25s ease-in-out;
   &.header--hidden {
-    top: -6rem;
+    background: linear-gradient(#111, #11111100);
+    text-shadow: 0 0 25px #000;
   }
   .container {
     display: flex;
@@ -169,15 +164,14 @@ header {
           position: relative;
           display: block;
           opacity: 0;
-          margin-top: -7px;
+          margin-top: -1rem;
           width: auto;
           height: 7px;
           background: var(--accent);
         }
       }
       &:hover {
-        a::after,
-        a.active {
+        a::after {
           opacity: 0.6;
           transition: all 0.2s ease-in-out;
         }
@@ -201,6 +195,25 @@ header {
     }
   }
 }
+.info {
+  padding: 7.5rem 0;
+  background: $black;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    p {
+      padding: 0 10rem;
+      font: 400 1.8rem $font2;
+      line-height: 2;
+    }
+    img {
+      width: 65rem;
+    }
+  }
+}
+
 #team {
   background: $black;
   h1 {
@@ -214,10 +227,13 @@ header {
   mix-blend-mode: overlay;
 }
 #countdown-area {
-  padding: 5rem 0;
+  padding: 7.5rem 0;
   background: var(--accent);
-  height: 50vh;
   scroll-snap-align: start;
+  h1 {
+    font-size: 3rem;
+    line-height: normal;
+  }
   .container {
     display: flex;
     justify-content: space-evenly;
@@ -270,6 +286,7 @@ footer {
 @media screen and (max-width: 780px) {
   .container {
     max-width: 480px;
+    padding: 0 2rem;
   }
   .flexcont {
     justify-content: space-between;
@@ -302,6 +319,17 @@ footer {
     flex-direction: column-reverse;
     #time {
       font-size: 5rem;
+    }
+  }
+  .info {
+    .container {
+      flex-direction: column;
+      img {
+        width: 24rem;
+      }
+      p {
+        padding: 7.5rem 1rem 0;
+      }
     }
   }
 }

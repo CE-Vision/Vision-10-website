@@ -7,14 +7,14 @@ export default function Modal(props) {
       {/* // <div className={props.show ? "overlayWrapperOpen " : "overlayWrapper"}> */}
       {/* <button className="cross" /> */}{" "}
       <div className="Modal">
-       < h1>Hello i am in</h1>
         {props.rounds.map((value, index) => {
           console.log(value.name);
           console.log(props.show);
           return (
             <div>
-              <h1>{value.name}</h1>
-              <h2>{value.tagline}</h2>
+              <h1>Rounds</h1>
+              <h2>{value.name}</h2>
+              <h4>{value.tagline}</h4>
               <p>{value.info}</p>
             </div>
           );

@@ -50,13 +50,6 @@ export default function Team() {
                 );
               })}
             </div>
-
-            {/* <Member />
-            <Member />
-            <Member />
-            <Member />
-            <Member />
-            <Member /> */}
           </div>
         </div>
       </div>

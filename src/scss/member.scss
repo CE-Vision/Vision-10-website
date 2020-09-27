@@ -14,7 +14,7 @@
   &:hover {
     .txt {
       p {
-        color: var(--pbg);
+        color: var(--sbg);
       }
       &::before {
         height: 100%;
@@ -54,7 +54,7 @@
     width: 25rem;
     text-align: center;
     border-radius: 1.5rem;
-    background: var(--sbg);
+    background: var(--pbg);
     h2 {
       font-size: 2rem;
     }

@@ -28,12 +28,12 @@
   transition: all 0.3s ease-in-out 1s;
 }
 .Backdrop {
-  z-index: 50;
+  z-index: 20;
   position: fixed;
   overflow-x: hidden;
   top: 0;
   left: 0;
-  background: rgba(32, 29, 41, 0.4);
+  background: #111111d7;
   content: "";
   height: 100%;
   width: 100vw;
@@ -41,16 +41,20 @@
 }
 .Modal {
   position: fixed;
-  z-index: 100;
+  z-index: 30;
   overflow-x: hidden;
   overflow-y: auto;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   margin: 5px auto;
-  width: 70vw;
+  padding: 3rem;
+  width: 80vw;
   max-width: calc(0.7 * 1250px);
   background: var(--sbg);
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  h4 {
+    color: var(--accent);
+  }
 }

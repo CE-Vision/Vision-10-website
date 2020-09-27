@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default class Header extends Component {
   state = {
@@ -17,10 +17,8 @@ export default class Header extends Component {
 
   handleScroll = () => {
     const { prevScrollpos } = this.state;
-
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollpos > currentScrollPos;
-
     this.setState({
       prevScrollpos: currentScrollPos,
       visible,
