@@ -16,5 +16,36 @@
     height: 100%;
     opacity: 40%;
   }
-  
+}
+.overlayWrapper {
+  display: none;
+  overflow: hidden;
+  top: 0;
+  transition: all 0.3s ease-in-out 1s;
+}
+.Backdrop {
+  z-index: 10;
+  position: fixed;
+  overflow-x: hidden;
+  top: 0;
+  left: 0;
+  background: rgba(32, 29, 41, 0.4);
+  content: "";
+  height: 100%;
+  width: 100vw;
+  transition: all 0.3s ease-in-out 1s;
+}
+.Modal {
+  position: fixed;
+  z-index: 15;
+  overflow-x: hidden;
+  overflow-y: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 5px auto;
+  width: 70vw;
+  max-width: calc(0.7 * 1250px);
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
 }

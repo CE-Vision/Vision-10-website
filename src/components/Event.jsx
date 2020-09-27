@@ -1,5 +1,6 @@
 import React from "react";
 import "../scss/event.scss";
+import Modal from "./Modal";
 
 export default function Event(props) {
   return (
