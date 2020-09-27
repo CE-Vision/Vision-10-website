@@ -49,11 +49,10 @@ const Events = () => {
         <h1
           style={{
             textAlign: "center",
-            fontSize: "5em",
-            fontWeight: "700",
+            fontSize: "45px",
           }}
         >
-          Events
+          EVENTS
         </h1>
       </div>
 

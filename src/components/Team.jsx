@@ -7,7 +7,7 @@ export default function Team() {
     <>
       <div id="team">
         <div className="container">
-          <h2>Meet the Team</h2>
+          <h1>MEET THE TEAM</h1>
           {team["Department"].map((value, index) => {
             return (
               <Member name={value.name} post={value.post} img={value.photo} />
