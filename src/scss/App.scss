@@ -6,6 +6,9 @@
   --pfg: #fafafa;
   --sfg: #eeeeee;
   --accent: #18a0fb;
+  // --swiper-theme-color: #007aff;
+  --swiper-theme-color: #000;
+  --swiper-navigation-color: #eee;
 }
 
 * {
@@ -17,7 +20,6 @@
     sans-serif;
   box-sizing: border-box;
 }
-
 html {
   font-size: 10px;
   text-rendering: optimizeLegibility;

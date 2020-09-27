@@ -47,6 +47,11 @@ const Events = () => {
 
   const swiper = (
     <Swiper
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-delay="50"
       loop={true}
       ref={swiperRef}
       // zoom={true}
@@ -67,7 +72,14 @@ const Events = () => {
 
   return (
     <div id="events">
-      <div className="container">
+      <div
+        className="container"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-delay="20"
+      >
         <h1
           style={{
             textAlign: "center",
