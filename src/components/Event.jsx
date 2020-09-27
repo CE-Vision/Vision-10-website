@@ -16,7 +16,7 @@ export default function Event(props) {
             <div className="tag">{props.type}</div>
           </div>
 
-          <div id="more">Learn more > </div>
+          <div id="more">Learn more </div>
         </div>
       </div>
     </>

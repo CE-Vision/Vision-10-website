@@ -5,10 +5,15 @@
   display: flex;
   flex-wrap: wrap;
   width: fit-content;
+  padding: 2rem 0rem;
 }
 #events {
   background: var(--accent);
   // padding-top: 2rem;
+  padding: 3rem 0rem;
+}
+.swiper-scrollbar {
+  display: none;
 }
 .wrapper {
   display: flex;
@@ -70,9 +75,13 @@
   width: 100rem;
   max-width: 110rem;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+
+  h2 {
+    font-size: 2.8rem;
+  }
   .img {
-    min-width: 25.6 * 3rem;
-    height: 14.4 * 3rem;
+    min-width: 25.6 * 2.5rem;
+    height: 14.4 * 2.5rem;
     margin: 0 1rem 0 0;
     border-radius: 1rem;
     background: #777;
@@ -93,7 +102,7 @@
   }
   #more {
     color: var(--accent);
-    margin-top: 1.5rem;
+    margin-top: 2rem;
     font: 700 1.4rem $font2;
     align-self: flex-end;
   }
@@ -115,10 +124,16 @@ img {
     justify-content: flex-start;
     flex-direction: column;
     width: 28rem;
-    height: 35rem;
+    height: 32rem;
+
+    h2 {
+      font-size: 2rem;
+    }
     .img {
-      // width: 100%;
+      // width: 0%;
+      min-width: 25.6 * 1rem;
       width: 25.6 * 1rem;
+      height: 14.4 * 1rem;
       min-height: 14.4 * 1rem;
       margin: 0 0 1rem 0;
     }
