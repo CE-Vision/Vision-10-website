@@ -9,7 +9,7 @@ export default function Member(props) {
         <div className="img">
           <img src={props.img} alt="" />
         </div>
-        <div className="text">
+        <div className="txt">
           <h2>{props.name}</h2>
           <p>{props.post}</p>
           <div className="links">

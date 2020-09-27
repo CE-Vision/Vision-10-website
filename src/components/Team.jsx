@@ -7,8 +7,7 @@ export default function Team() {
     <>
       <div id="team">
         <div className="container">
-          <h1>Meet the Team</h1>
-          <h2>Department</h2>
+          <h2>Meet the Team</h2>
           <div id="card-wrapper">
             {team["Department"].map((value, index) => {
               return (

@@ -17,7 +17,7 @@ export default function Modal(props) {
               <p>{value.info}</p>
             </div>
           );
-        })}{" "}
+        })}
       </div>
     </div>
   );

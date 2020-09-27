@@ -1,11 +1,24 @@
 @import "./vars";
 
+#team {
+  text-align: center;
+  #card-wrapper {
+    width: fit-content;
+    margin: auto;
+    justify-content: center;
+  }
+}
 .member {
   display: inline-block;
   margin: 5rem 2rem;
   &:hover {
-    .text::before {
-      height: 100%;
+    .txt {
+      p {
+        color: var(--pbg);
+      }
+      &::before {
+        height: 100%;
+      }
     }
   }
   .img {
@@ -16,8 +29,10 @@
     width: 20rem;
     border-radius: 1.5rem;
     background: #777;
+    overflow: hidden;
+    border: solid 5px var(--accent);
   }
-  .text {
+  .txt {
     &::before {
       content: "";
       top: 0;
@@ -26,20 +41,29 @@
       z-index: -1;
       position: absolute;
       display: block;
-      background: $accent;
+      background: var(--accent);
       height: 0;
       width: 100%;
-      transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+      transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     }
     z-index: 5;
     position: relative;
     overflow: hidden;
     margin: -12rem 1.2rem 1rem;
     padding: 13.5rem 1rem 2rem 1rem;
-    width: 28rem;
+    width: 25rem;
     text-align: center;
     border-radius: 1.5rem;
     background: var(--sbg);
+    h2 {
+      font-size: 2rem;
+    }
+    p {
+      margin: 5px 0 0;
+      color: var(--accent);
+      font-weight: 700;
+      transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
   }
   .links {
     margin-top: 1.5rem;

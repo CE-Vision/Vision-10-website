@@ -31,9 +31,17 @@ export default function Event(props) {
 
   return (
     <>
-      {/* <div className="Backdrop"> */}
-      <Modal show={modalState} rounds={props.rounds}></Modal>
-      {/* </div> */}
+      {modalState ? (
+        <>
+          <div
+            className="Backdrop"
+            onClick={() => {
+              setModalState(false);
+            }}
+          />
+          <Modal show={modalState} rounds={props.rounds}></Modal>
+        </>
+      ) : null}
       <div
         className="card"
         onClick={() => {

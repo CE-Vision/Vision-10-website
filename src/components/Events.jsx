@@ -3,6 +3,7 @@ import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import event from "../data/events.json";
 import Event from "./Event";
+import Modal from "./Modal";
 
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
@@ -12,6 +13,8 @@ import "swiper/components/scrollbar/scrollbar.scss";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 const Events = () => {
+  const [modalState, setModalState] = useState(false);
+
   function setTech() {
     changeSlides(
       event.map((event, index) => {
@@ -126,17 +129,34 @@ const Events = () => {
   const [swiperSlides, changeSlides] = useState(
     event.map((event, index) => {
       return (
-        <SwiperSlide>
-          <div id="card-wrapper" key={index}>
-            <Event
-              eventTitle={event.eventname}
-              eventTagline={event.tagline}
-              img={event.image}
-              type={event.category}
-              rounds={event.rounds}
-            />
-          </div>
-        </SwiperSlide>
+        <>
+          <SwiperSlide>
+            <div id="card-wrapper" key={index}>
+              <Event
+                eventTitle={event.eventname}
+                eventTagline={event.tagline}
+                img={event.image}
+                type={event.category}
+                rounds={event.rounds}
+                onClick={() => {
+                  console.log("onCLickFired");
+                  setModalState(true);
+                }}
+              />
+            </div>
+          </SwiperSlide>
+          {modalState ? (
+            <>
+              <div
+                className="Backdrop"
+                onClick={() => {
+                  setModalState(false);
+                }}
+              />
+              <Modal show={modalState} rounds={event.rounds}></Modal>
+            </>
+          ) : null}
+        </>
       );
     })
   );
