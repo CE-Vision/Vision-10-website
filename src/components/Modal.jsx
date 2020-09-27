@@ -12,7 +12,6 @@ export default function Modal(props) {
           console.log(props.show);
           return (
             <div>
-              <h1>Rounds</h1>
               <h2>{value.name}</h2>
               <h4>{value.tagline}</h4>
               <p>{value.info}</p>
