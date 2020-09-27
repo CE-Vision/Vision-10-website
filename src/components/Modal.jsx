@@ -7,6 +7,7 @@ export default function Modal(props) {
       {/* // <div className={props.show ? "overlayWrapperOpen " : "overlayWrapper"}> */}
       {/* <button className="cross" /> */}{" "}
       <div className="Modal">
+       < h1>Hello i am in</h1>
         {props.rounds.map((value, index) => {
           console.log(value.name);
           console.log(props.show);
