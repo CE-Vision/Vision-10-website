@@ -24,6 +24,7 @@ const Events = () => {
                 eventTagline={event.tagline}
                 img={event.image}
                 type={event.category}
+                rounds={event.rounds}
               />
             </div>
           </SwiperSlide>
@@ -43,6 +44,7 @@ const Events = () => {
                 eventTagline={event.tagline}
                 img={event.image}
                 type={event.category}
+                rounds={event.rounds}
               />
             </div>
           </SwiperSlide>
@@ -61,6 +63,7 @@ const Events = () => {
                 eventTagline={event.tagline}
                 img={event.image}
                 type={event.category}
+                rounds={event.rounds}
               />
             </div>
           </SwiperSlide>
@@ -130,6 +133,7 @@ const Events = () => {
               eventTagline={event.tagline}
               img={event.image}
               type={event.category}
+              rounds={event.rounds}
             />
           </div>
         </SwiperSlide>
