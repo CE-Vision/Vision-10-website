@@ -38,7 +38,9 @@ export default class Header extends Component {
                 duration={250}
                 to="events"
               >
-                Events
+                <NavLink to="/" exact>
+                  Events
+                </NavLink>
               </Link>
             </li>
             <li>
