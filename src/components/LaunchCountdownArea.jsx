@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 
 const LaunchCountdownArea = () => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(2020, 8, 28, 18, 0, 0) - +new Date();
+    const difference = +new Date(2020, 8, 28, 18, 15, 0) - +new Date();
     let timeLeft = {};
 
     // console.log("Date:" + Date(2020, 10, 5));

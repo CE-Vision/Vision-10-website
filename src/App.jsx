@@ -39,11 +39,11 @@ export default function App() {
       <Router>
         <Header />{" "}
         <ScrollToTop>
-          <Route path="/" exact component={LaunchCountdownArea} />
+          <Route path="/" exact component={Home} />
           <Suspense fallback={<Loader />}>
             <Switch>
               <Route path="/team" component={Team} />
-              <Route path="/home" component={Home} />
+              {/* <Route path="/home" component={Home} /> */}
             </Switch>
           </Suspense>
         </ScrollToTop>
