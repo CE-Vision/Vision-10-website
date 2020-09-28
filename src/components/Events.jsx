@@ -16,6 +16,7 @@ const Events = () => {
   const [modalState, setModalState] = useState(false);
 
   function showModal(rounds) {
+    if (!rounds) return;
     setEventRounds(rounds);
     console.log("This is firing");
     swiperRef.current.swiper.autoplay.stop();

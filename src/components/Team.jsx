@@ -11,14 +11,28 @@ export default function Team() {
           <h2>Department Coordinators</h2>
           {team["Department"].map((value, index) => {
             return (
-              <Member name={value.name} post={value.post} img={value.photo} />
+              <Member
+                name={value.name}
+                post={value.post}
+                img={value.photo}
+                linkedin={value.linkedin}
+                github={value.github}
+                portfolio={value.portfolio}
+              />
             );
           })}
           <h2>Web and Graphics</h2>
           <div id="card-wrapper">
             {team["WebNGraphics"].map((value, index) => {
               return (
-                <Member name={value.name} post={value.post} img={value.photo} />
+                <Member
+                  name={value.name}
+                  post={value.post}
+                  img={value.photo}
+                  linkedin={value.linkedin}
+                  github={value.github}
+                  portfolio={value.portfolio}
+                />
               );
             })}
           </div>
@@ -26,7 +40,14 @@ export default function Team() {
           <div id="card-wrapper">
             {team["Tech"].map((value, index) => {
               return (
-                <Member name={value.name} post={value.post} img={value.photo} />
+                <Member
+                  name={value.name}
+                  post={value.post}
+                  img={value.photo}
+                  linkedin={value.linkedin}
+                  github={value.github}
+                  portfolio={value.portfolio}
+                />
               );
             })}
           </div>
@@ -34,7 +55,14 @@ export default function Team() {
           <div id="card-wrapper">
             {team["Non-Tech"].map((value, index) => {
               return (
-                <Member name={value.name} post={value.post} img={value.photo} />
+                <Member
+                  name={value.name}
+                  post={value.post}
+                  img={value.photo}
+                  linkedin={value.linkedin}
+                  github={value.github}
+                  portfolio={value.portfolio}
+                />
               );
             })}
           </div>

@@ -14,6 +14,7 @@ export default function Info() {
       >
         <img src={logo} alt="" className="src" />
         <p>
+          <h1>Deciphering Virtuality!</h1>
           Vision is the most awaited techfest for every student in SVIT. This
           year Computer Department presents you VISION 10, a legacy of our
           department to provide the best symposium experience since 9 years.

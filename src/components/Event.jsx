@@ -19,8 +19,11 @@ export default function Event(props) {
             <p>{props.eventTagline}</p>
             <div className="tag">{props.type}</div>
           </div>
-
-          <div id="more">Learn more </div>
+          {(() => {
+            if (props.rounds) {
+              return <div id="more">Learn more </div>;
+            }
+          })()}
         </div>
       </div>
     </>

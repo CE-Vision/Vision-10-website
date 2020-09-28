@@ -4,27 +4,20 @@
       "post": "Head",
       "name": "Hemakshi Jani",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/DEPARTMENT/DeptHead(Hemakshi%20Jani).jpg",
-      "github": "https://github.com/hemakshi-07",
-      "portfolio": "",
-      "linkedin": ""
+      "github": "https://github.com/hemakshi-07"
     },
 
     {
       "post": "Head",
       "name": "Zalak Desai",
-      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/DEPARTMENT/DeptHead(Zalak%20Desai).JPG",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/DEPARTMENT/DeptHead(Zalak%20Desai).JPG"
     },
 
     {
       "post": "Co-Head",
       "name": "Dhrumil Shah",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/DEPARTMENT/DeptCoHead(Dhrumil%20Shah).jpg",
-      "github": "https://github.com/dhrumilshah57",
-      "portfolio": "",
-      "linkedin": ""
+      "github": "https://github.com/dhrumilshah57"
     }
   ],
 
@@ -34,7 +27,6 @@
       "name": "Ayaan Retiwala",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GHead(Ayaan%20Retiwala).jpg",
       "github": "https://github.com/LOLwierd",
-      "portfolio": "",
       "linkedin": "https://www.linkedin.com/in/ayaan-retiwala-5400bb165/"
     },
 
@@ -51,8 +43,6 @@
       "post": "Head",
       "name": "Suraj Shah",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GHead(Suraj%20Shah).jpg",
-      "github": "",
-      "portfolio": "",
       "linkedin": "http://linkedin.com/in/suraj-shah-35a285193"
     },
 
@@ -61,7 +51,6 @@
       "name": "Trishala Swain",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GCoHead(Trishala%20Swain).jpg",
       "github": "https://github.com/trishala01",
-      "portfolio": "",
       "linkedin": "https://www.linkedin.com/in/trishala-swain-07b062196"
     },
     {
@@ -84,27 +73,20 @@
       "post": "Volunteer",
       "name": "Ayush Patel",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Ayush%20Patel).jpg",
-      "github": "",
-      "portfolio": "",
       "linkedin": "https://www.linkedin.com/in/ayush-patel-a947441b4"
     },
 
     {
       "post": "Volunteer",
       "name": "Vatsal Roy",
-      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Vatsal%20Roy).jpg",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Vatsal%20Roy).jpg"
     },
 
     {
       "post": "Volunteer",
       "name": "Nimit Trevadiya",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/W%26G/W%26GVol(Nimit%20Trevadiya).jpg",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "github": "https://github.com/nimit070"
     }
   ],
 
@@ -114,26 +96,19 @@
       "name": "Harsh Kotwani",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/TECH/TechHead(Harsh%20Kotwani).jpg",
       "github": "https://github.com/whatharshcodes",
-      "portfolio": "",
       "linkedin": "https://www.linkedin.com/in/harshkotwani/"
     },
 
     {
       "post": "Head",
       "name": "Parag Radadiya",
-      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/TECH/TechHead(Parag%20Radadiya).jpeg",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/TECH/TechHead(Parag%20Radadiya).jpeg"
     },
 
     {
       "post": "Co-Head",
       "name": "Harshita Daswani",
-      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/TECH/TechCoHead(Harshita%20Daswani).jpg",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/TECH/TechCoHead(Harshita%20Daswani).jpg"
     }
   ],
 
@@ -141,19 +116,14 @@
     {
       "post": "Head",
       "name": "Harshil Gosai",
-      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/NON-TECH/NonTechHead(Harshil%20Gosai).jpg",
-      "github": "",
-      "portfolio": "",
-      "linkedin": ""
+      "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/NON-TECH/NonTechHead(Harshil%20Gosai).jpg"
     },
 
     {
       "post": "Co-Head",
       "name": "Meet Shah",
       "photo": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TEAM/NON-TECH/NonTechCoHead(Meet%20Shah).jpg",
-      "github": "https://github.com/meetshah27",
-      "portfolio": "",
-      "linkedin": ""
+      "github": "https://github.com/meetshah27"
     }
   ]
 }

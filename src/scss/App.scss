@@ -190,10 +190,8 @@ header {
     }
   }
   #register {
-    display: inline-flex;
     font: 700 1.6rem $font1;
     color: #fff;
-    align-items: center;
     padding: 5px 1.2rem;
     vertical-align: middle;
     border: 2px solid var(--accent);
@@ -202,6 +200,11 @@ header {
     text-shadow: 0 0 #000;
     box-shadow: 0 0 #fff;
     transition: all 0.3s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    a {
+      &::after {
+        height: 0;
+      }
+    }
     &:hover {
       background: var(--accent);
       text-shadow: 2px 2px #000;
@@ -312,6 +315,14 @@ footer {
     max-width: 480px;
     padding: 0 2rem;
   }
+  header {
+    .container {
+      img {
+        display: none;
+        // width: 2rem;
+      }
+    }
+  }
   .flexcont {
     justify-content: space-between;
     span {
@@ -353,6 +364,10 @@ footer {
       }
       p {
         padding: 7.5rem 1rem 0;
+        h1 {
+          text-align: center;
+          line-height: 1.4;
+        }
       }
     }
   }

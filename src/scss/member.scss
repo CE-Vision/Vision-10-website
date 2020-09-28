@@ -74,6 +74,10 @@
     }
   }
   .links {
+    display: flex;
+    height: 2.5rem;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin-top: 1.5rem;
     img {
       height: 2rem;
