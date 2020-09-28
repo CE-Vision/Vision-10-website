@@ -140,5 +140,13 @@
         "info": "This event will be conducted in Google form. The participant have to solve the given riddle and select the correct option.  Every correct answer will lead them to the right path and every wrong answer will lead them to wrong path. The first person to complete this round will be the winner."
       }
     ]
+  },
+
+  {
+    "category": "WORKSHOP",
+    "eventname": "Competitive Programming",
+    "tagline": "",
+    "image": "https://raw.githubusercontent.com/CE-Vision/Vision-10-graphics/main/TECH/Workshop.png",
+    "rounds": []
   }
 ]
