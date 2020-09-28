@@ -14,6 +14,7 @@ import Background from "./components/Background";
 import Loader from "./components/Loader";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import LaunchCountdownArea from "./components/LaunchCountdownArea.jsx";
 
 const Team = lazy(() => import("./components/Team"));
 
@@ -38,10 +39,11 @@ export default function App() {
       <Router>
         <Header />{" "}
         <ScrollToTop>
-          <Route path="/" exact component={Home} />
+          <Route path="/" exact component={LaunchCountdownArea} />
           <Suspense fallback={<Loader />}>
             <Switch>
               <Route path="/team" component={Team} />
+              <Route path="/home" component={Home} />
             </Switch>
           </Suspense>
         </ScrollToTop>

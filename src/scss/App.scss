@@ -147,8 +147,9 @@ header {
   background: $black;
   transition: all 0.25s ease-in-out;
   &.header--hidden {
-    background: linear-gradient(#111, #11111100);
-    text-shadow: 0 0 25px #000;
+    top: -6rem;
+    // background: linear-gradient(#111, #11111100);
+    // text-shadow: 0 0 25px #000;
   }
   .container {
     display: flex;
@@ -287,7 +288,7 @@ header {
   flex-direction: column;
 }
 footer {
-  background: $black;
+  background: rgba(17, 17, 17, 0.8);
   font-weight: 700;
   .container {
     display: flex;
