@@ -62,9 +62,9 @@ const Events = () => {
       navigation
       setWrapperSize={true}
       scrollbar={{ draggable: true }}
-      speed={1000}
-      autoplay={{ delay: 1000 }}
-      data-swiper-autoplay={2000}
+      speed={1500}
+      autoplay={{ delay: 2000 }}
+      data-swiper-autoplay={2750}
     >
       {swiperSlides}
     </Swiper>
