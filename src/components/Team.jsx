@@ -1,6 +1,7 @@
 import React from "react";
 import Member from "./Member";
 import team from "../data/team.json";
+import Loader from "./Loader";
 
 export default function Team() {
   return (

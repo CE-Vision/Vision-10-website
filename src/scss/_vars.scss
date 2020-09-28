@@ -2,5 +2,10 @@
 $font1: "Montserrat", sans-serif;
 $font2: "Roboto", sans-serif;
 
-$accent: rgba(24, 160, 251, 0.75);
-$black: rgba(17, 17, 17, 0.8);
+$accent: linear-gradient(
+  90deg,
+  transparent,
+  rgba(24, 160, 251, 0.35),
+  transparent
+);
+$black: rgba(17, 17, 17, 0.6);

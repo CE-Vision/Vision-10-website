@@ -6,12 +6,12 @@ class Loader extends Component {
     return (
       <>
         <div className="container">
-          <div className="loader">
-            <img
+          <div className="loader" style={{ height: "100" }}>
+            {/* <img
               // src='https://storage.googleapis.com/gweb-uniblog-publish-prod/original_images/Dino_non-birthday_version.gif'
               src={dino}
               alt="Loading..."
-            />
+            /> */}
           </div>
         </div>
       </>
