@@ -255,7 +255,14 @@ header {
     font-size: 7.5rem;
   }
 }
-
+.loader {
+  width: fit-content;
+  height: 100vh;
+  img {
+    margin: auto;
+    height: 30vh;
+  }
+}
 #countdown {
   flex-direction: column;
 }

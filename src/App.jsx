@@ -21,7 +21,7 @@ export default function App() {
 
       <Router onUpdate={() => window.scrollTo(0, 0)}>
         <Header /> <Route path="/" exact component={Home} />
-        <Suspense fallback={"Hold Up!"}>
+        <Suspense fallback={<Loader />}>
           <Switch>
             <Route path="/team" component={Team} />
           </Switch>
