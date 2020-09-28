@@ -75,13 +75,14 @@
   }
   .links {
     display: flex;
-    height: 2.5rem;
+    height: 2rem;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 1.5rem;
     img {
       height: 2rem;
       width: 2rem;
+      margin: 0 1rem;
       &:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
       }

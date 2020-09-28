@@ -28,25 +28,17 @@ export default class Header extends Component {
       <header className={!this.state.visible ? "header--hidden" : ""}>
         <div className="container">
           <NavLink to="/" exact>
-            <img
-              src={logo}
-              alt=""
-              onClick={() => {
-                window.scrollTo(0, 0);
-              }}
-            />
+            <img src={logo} alt="" />
           </NavLink>
           <ul>
-            <li style={{ verticalAlign: "middle" }}>
+            <li>
               <Link
                 activeClass="active"
                 smooth={true}
                 duration={250}
                 to="events"
               >
-                <NavLink to="/#events" exact>
-                  Events
-                </NavLink>
+                Events
               </Link>
             </li>
             <li>
@@ -55,17 +47,11 @@ export default class Header extends Component {
             <li>
               <button
                 id="register"
-                // onClick={() => {
-                //   window.location.href = "http://registration.cevision.tech/";
-                // }}
+                onClick={() => {
+                  window.open("http://registration.cevision.tech/", "_blank");
+                }}
               >
-                <a
-                  href="http://registration.cevision.tech/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Register
-                </a>
+                Register
               </button>
             </li>
           </ul>
