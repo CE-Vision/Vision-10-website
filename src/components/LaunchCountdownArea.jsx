@@ -80,7 +80,13 @@ const LaunchCountdownArea = () => {
           data-aos-once="false"
           data-aos-delay="50"
         >
-          <h1 style={{ color: "var(--sbg)", fontSize: "5rem" }}>
+          <h1
+            id="launchCA"
+            style={{
+              color: "var(--sbg)",
+              fontSize: "5rem",
+            }}
+          >
             LAUNCHING IN...
           </h1>
           {/* <h1>5 OCT</h1> */}

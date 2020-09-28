@@ -50,8 +50,7 @@ const Events = () => {
     <Swiper
       data-aos="fade-up"
       data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
+      data-aos-once="true"
       data-aos-delay="50"
       loop={true}
       ref={swiperRef}
@@ -77,8 +76,7 @@ const Events = () => {
         className="container"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-delay="20"
       >
         <h1

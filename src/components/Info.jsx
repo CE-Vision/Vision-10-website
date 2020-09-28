@@ -8,8 +8,7 @@ export default function Info() {
         className="container"
         data-aos="fade-up"
         data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
+        data-aos-once="true"
         data-aos-delay="50"
       >
         <img src={logo} alt="" className="src" />

@@ -70,8 +70,7 @@ const CountdownArea = () => {
           id="date"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-delay="50"
         >
           <h1 style={{ color: "var(--sbg)", fontSize: "3rem" }}>
@@ -83,8 +82,7 @@ const CountdownArea = () => {
           id="countdown"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
+          data-aos-once="true"
           data-aos-delay="50"
         >
           <h1 id="time">
