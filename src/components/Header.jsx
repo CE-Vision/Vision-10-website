@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-
+import VLogo from "../assets/vision-logo.svg";
 export default class Header extends Component {
   state = {
     prevScrollpos: window.pageYOffset,

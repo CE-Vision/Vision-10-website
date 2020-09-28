@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import SwiperCore, { Autoplay, Pagination, Navigation } from "swiper";
+import React, { useState, useRef } from "react";
+import SwiperCore, { Autoplay, Pagination, Navigation, Zoom } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import event from "../data/events.json";
 import Event from "./Event";
@@ -10,7 +10,7 @@ import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
 
-SwiperCore.use([Autoplay, Pagination, Navigation]);
+SwiperCore.use([Autoplay, Pagination, Navigation, Zoom]);
 
 const Events = () => {
   const [modalState, setModalState] = useState(false);
@@ -18,10 +18,12 @@ const Events = () => {
   function showModal(rounds) {
     setEventRounds(rounds);
     console.log("This is firing");
+    swiperRef.current.swiper.autoplay.stop();
     setModalState(true);
   }
 
   const [eventRounds, setEventRounds] = useState([]);
+  const swiperRef = useRef(null);
   const [swiperSlides] = useState(
     event.map((event, index) => {
       return (
@@ -43,9 +45,41 @@ const Events = () => {
     })
   );
 
+  const swiper = (
+    <Swiper
+      data-aos="fade-up"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      data-aos-once="false"
+      data-aos-delay="50"
+      loop={true}
+      ref={swiperRef}
+      // zoom={true}
+      centeredSlides={true}
+      spaceBetween={10}
+      slidesPerView={"1.25"}
+      pagination={{ clickable: true }}
+      navigation
+      setWrapperSize={true}
+      scrollbar={{ draggable: true }}
+      speed={1000}
+      autoplay={{ delay: 1000 }}
+      data-swiper-autoplay={2000}
+    >
+      {swiperSlides}
+    </Swiper>
+  );
+
   return (
     <div id="events">
-      <div className="container">
+      <div
+        className="container"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-delay="20"
+      >
         <h1
           style={{
             textAlign: "center",
@@ -56,26 +90,7 @@ const Events = () => {
         </h1>
       </div>
 
-      <Swiper
-        loop={true}
-        centeredSlides={true}
-        spaceBetween={10}
-        breakpoints={{
-          1080: {
-            slidesPerView: "1.25",
-          },
-        }}
-        slidesPerView={"1.25"}
-        pagination={{ clickable: true }}
-        navigation
-        setWrapperSize={true}
-        scrollbar={{ draggable: true }}
-        speed={1000}
-        autoplay={{ delay: 1000 }}
-        data-swiper-autoplay={2000}
-      >
-        {swiperSlides}
-      </Swiper>
+      {swiper}
       {modalState ? (
         <>
           <div
