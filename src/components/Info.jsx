@@ -3,15 +3,15 @@ import logo from "../assets/vision-logo.svg";
 
 export default function Info() {
   return (
-    <div
-      className="info"
-      data-aos="fade-up"
-      data-aos-easing="ease-in-out"
-      data-aos-mirror="true"
-      data-aos-once="false"
-      data-aos-delay="50"
-    >
-      <div className="container">
+    <div className="info">
+      <div
+        className="container"
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        data-aos-once="false"
+        data-aos-delay="50"
+      >
         <img src={logo} alt="" className="src" />
         <p>
           Vision is the most awaited techfest for every student in SVIT. This

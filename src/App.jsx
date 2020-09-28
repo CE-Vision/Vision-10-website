@@ -1,5 +1,11 @@
-import React, { Suspense, lazy, useEffect, useState } from "react";
-import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
+import React, { Suspense, lazy, useEffect } from "react";
+import {
+  Switch,
+  Route,
+  BrowserRouter as Router,
+  withRouter,
+  useLocation,
+} from "react-router-dom";
 import "./scss/App.scss";
 import Header from "./components/Header";
 import Home from "./Home";
@@ -13,24 +19,32 @@ const Team = lazy(() => import("./components/Team"));
 
 AOS.init();
 
+function _ScrollToTop(props) {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return props.children;
+}
+
+const ScrollToTop = withRouter(_ScrollToTop);
+
 export default function App() {
-  const [isLoaded, setIsLoaded] = useState(false);
-  const loadPage = () => {
-    setIsLoaded(true);
-  };
-  useEffect(loadPage);
   return (
     <>
-      {isLoaded ? "" : <Loader />}
       <Background />
-
-      <Router onUpdate={() => window.scrollTo(0, 0)}>
-        <Header /> <Route path="/" exact component={Home} />
-        <Suspense fallback={<Loader />}>
-          <Switch>
-            <Route path="/team" component={Team} />
-          </Switch>
-        </Suspense>
+      <Router>
+        <Header />{" "}
+        <ScrollToTop>
+          <Route path="/" exact component={Home} />
+          <Suspense fallback={<Loader />}>
+            <Switch>
+              <Route path="/team" component={Team} />
+            </Switch>
+          </Suspense>
+        </ScrollToTop>
       </Router>
       <Footer />
     </>

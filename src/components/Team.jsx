@@ -6,29 +6,16 @@ export default function Team() {
   return (
     <>
       <div id="team">
-        <div
-          className="container"
-          data-aos="fade-up"
-          data-aos-easing="ease-in-out"
-          data-aos-mirror="true"
-          data-aos-once="false"
-          data-aos-delay="50"
-        >
+        <div className="container">
           <h1>MEET THE TEAM</h1>
+          <h2>Department Coordinators</h2>
           {team["Department"].map((value, index) => {
             return (
               <Member name={value.name} post={value.post} img={value.photo} />
             );
           })}
           <h2>Web and Graphics</h2>
-          <div
-            id="card-wrapper"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-delay="50"
-          >
+          <div id="card-wrapper">
             {team["WebNGraphics"].map((value, index) => {
               return (
                 <Member name={value.name} post={value.post} img={value.photo} />
@@ -36,14 +23,7 @@ export default function Team() {
             })}
           </div>
           <h2>Tech</h2>
-          <div
-            id="card-wrapper"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-delay="50"
-          >
+          <div id="card-wrapper">
             {team["Tech"].map((value, index) => {
               return (
                 <Member name={value.name} post={value.post} img={value.photo} />
@@ -51,14 +31,7 @@ export default function Team() {
             })}
           </div>
           <h2>Non-Tech</h2>
-          <div
-            id="card-wrapper"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-            data-aos-mirror="true"
-            data-aos-once="false"
-            data-aos-delay="50"
-          >
+          <div id="card-wrapper">
             {team["Non-Tech"].map((value, index) => {
               return (
                 <Member name={value.name} post={value.post} img={value.photo} />

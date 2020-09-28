@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
-import VLogo from "../assets/vision-logo.svg";
+import logo from "../assets/vision-logo.svg";
 export default class Header extends Component {
   state = {
     prevScrollpos: window.pageYOffset,
@@ -14,7 +14,6 @@ export default class Header extends Component {
   componentWillUnmount() {
     window.removeEventListener("scroll", this.handleScroll);
   }
-
   handleScroll = () => {
     const { prevScrollpos } = this.state;
     const currentScrollPos = window.pageYOffset;
@@ -28,6 +27,9 @@ export default class Header extends Component {
     return (
       <header className={!this.state.visible ? "header--hidden" : ""}>
         <div className="container">
+          <NavLink to="/" exact>
+            <img src={logo} alt="" />
+          </NavLink>
           <ul>
             <li>
               <Link
@@ -36,9 +38,7 @@ export default class Header extends Component {
                 duration={250}
                 to="events"
               >
-                <NavLink to="/" exact>
-                  Events
-                </NavLink>
+                Events
               </Link>
             </li>
             <li>

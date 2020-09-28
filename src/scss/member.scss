@@ -8,7 +8,12 @@
     justify-content: center;
   }
   h1 {
-    font-size: 4.5em;
+    font-size: 5rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    font-family: $font2;
+    color: var(--accent);
   }
 }
 .member {
@@ -58,11 +63,11 @@
     text-align: center;
     border-radius: 1.5rem;
     background: var(--pbg);
-    h2 {
+    h3 {
       font-size: 2rem;
+      font-weight: 700;
     }
     p {
-      margin: 5px 0 0;
       color: var(--accent);
       font-weight: 700;
       transition: all 0.4s cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -76,6 +81,13 @@
       &:hover {
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
       }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  #team {
+    h1 {
+      font-size: 3rem;
     }
   }
 }

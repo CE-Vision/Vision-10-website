@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../scss/background.scss";
 
 export default function Modal(props) {
+  useEffect(() => {
+    document.body.classList.add("modal-open");
+    return () => {
+      document.body.classList.remove("modal-open");
+    };
+  });
   return (
     <div className={props.show ? "overlayWrapper open " : "overlayWrapper"}>
       {/* // <div className={props.show ? "overlayWrapperOpen " : "overlayWrapper"}> */}

@@ -65,21 +65,28 @@ const CountdownArea = () => {
 
   return (
     <div id="countdown-area">
-      <div
-        className="container"
-        data-aos="fade-up"
-        data-aos-easing="ease-in-out"
-        data-aos-mirror="true"
-        data-aos-once="false"
-        data-aos-delay="50"
-      >
-        <div id="date">
+      <div className="container">
+        <div
+          id="date"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-delay="50"
+        >
           <h1 style={{ color: "var(--sbg)", fontSize: "3rem" }}>
             MARK THE DATE
           </h1>
           <h1>5 OCT</h1>
         </div>
-        <div id="countdown">
+        <div
+          id="countdown"
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
+          data-aos-once="false"
+          data-aos-delay="50"
+        >
           <h1 id="time">
             {timerComponents.length ? timerComponents : <span>Time's up!</span>}
           </h1>
@@ -89,14 +96,7 @@ const CountdownArea = () => {
               fontSize: "3.5rem",
             }}
           >
-            <div
-              className="flexcont"
-              data-aos="fade-up"
-              data-aos-easing="ease-in-out"
-              data-aos-mirror="true"
-              data-aos-once="false"
-              data-aos-delay="50"
-            >
+            <div className="flexcont">
               <span>DAYS</span>
               <span>HRS</span>
               <span>MIN</span>

@@ -37,6 +37,9 @@ body {
   color: var(--pfg);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 h1,
 h2,
@@ -149,8 +152,13 @@ header {
   }
   .container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
+    img {
+      width: 3.4rem;
+      margin: 0 1rem;
+      object-fit: contain;
+    }
   }
   ul {
     font-weight: 700;
@@ -334,7 +342,7 @@ footer {
     .container {
       flex-direction: column;
       img {
-        width: 24rem;
+        width: 20rem;
       }
       p {
         padding: 7.5rem 1rem 0;
