@@ -45,14 +45,17 @@ export default class Header extends Component {
               <NavLink to="/team">Team</NavLink>
             </li>
             <li>
-              <button
+              <a
+                href="http://registration.cevision.tech/"
                 id="register"
-                onClick={() => {
-                  window.location.href = "http://registration.cevision.tech/";
-                }}
+                target="_blank"
+                rel="noopener noreferrer"
+                // onClick={() => {
+                //   window.location.href = "http://registration.cevision.tech/";
+                // }}
               >
                 Register
-              </button>
+              </a>
             </li>
           </ul>
         </div>
